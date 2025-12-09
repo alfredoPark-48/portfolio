@@ -16,18 +16,21 @@ export default function About() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-3xl font-bold mb-12 tracking-tight">{t.about.title}</h2>
-
                     <div className="grid md:grid-cols-2 gap-12 md:gap-20">
-                        <div className="space-y-6 text-lg text-accents-5 leading-relaxed">
-                            <p>
-                                {t.about.description}
-                            </p>
+                        <div>
+                            <h3 className="text-sm font-semibold uppercase tracking-wider text-accents-4 mb-6">
+                                {t.about.title}
+                            </h3>
+                            <div className="space-y-6 text-lg text-accents-5 leading-relaxed">
+                                <p>
+                                    {t.about.description}
+                                </p>
+                            </div>
                         </div>
 
                         <div>
                             <h3 className="text-sm font-semibold uppercase tracking-wider text-accents-4 mb-6">
-                                Skills & Technologies
+                                {t.about.skillsTitle}
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {SKILLS.map((skill, index) => (

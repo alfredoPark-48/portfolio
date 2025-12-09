@@ -14,7 +14,8 @@
     },
     "about": {
         "title": "About Me",
-        "description": "I'm a passionate developer with a keen eye for design and a drive for creating seamless digital experiences. With a strong foundation in modern web technologies, I transform complex requirements into elegant, user-friendly solutions."
+        "description": "I'm a passionate developer with a keen eye for design and a drive for creating seamless digital experiences. With a strong foundation in modern web technologies, I transform complex requirements into elegant, user-friendly solutions.",
+        "skillsTitle": "Skills & Technologies"
     },
     "projects": {
         "title": "Selected Projects",
@@ -35,5 +36,10 @@
         "description": "Open for new opportunities. Let's build something amazing together.",
         "sayHello": "Say Hello",
         "rights": "All rights reserved."
+    },
+    "notFound": {
+        "title": "404",
+        "description": "The page you are looking for does not exist.",
+        "backHome": "Return Home"
     }
 }

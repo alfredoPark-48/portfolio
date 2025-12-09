@@ -14,7 +14,8 @@
     },
     "about": {
         "title": "Sobre mí",
-        "description": "Soy un desarrollador apasionado con un buen ojo para el diseño y un impulso para crear experiencias digitales fluidas. Con una base sólida en tecnologías web modernas, transformo requisitos complejos en soluciones elegantes y fáciles de usar."
+        "description": "Soy un desarrollador apasionado con un buen ojo para el diseño y un impulso para crear experiencias digitales fluidas. Con una base sólida en tecnologías web modernas, transformo requisitos complejos en soluciones elegantes y fáciles de usar.",
+        "skillsTitle": "Habilidades y Tecnologías"
     },
     "projects": {
         "title": "Proyectos Seleccionados",
@@ -35,5 +36,10 @@
         "description": "Abierto a nuevas oportunidades. Construyamos algo increíble juntos.",
         "sayHello": "Di Hola",
         "rights": "Todos los derechos reservados."
+    },
+    "notFound": {
+        "title": "404",
+        "description": "La página que buscas no existe.",
+        "backHome": "Volver al Inicio"
     }
 }
