@@ -1,4 +1,5 @@
 export interface Project {
+  id: string; // Key for translation
   title: string;
   description: string;
   tags: string[];
@@ -11,8 +12,9 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    id: "bmsintel",
     title: "BMSIntel",
-    description: "All-in-one building management platform that unifies critical systems for performance optimization and predictive analytics. Features real-time IoT monitoring, multi-building oversight, and end-to-end encryption on a private blockchain architecture.",
+    description: "All-in-one building management...", // Fallback/Reference
     tags: ["Next.js", "TypeScript", "NestJS", "PostgreSQL"],
     link: "https://bmsintel.com/",
     appLink: "https://app.bmsintel.com/login",

@@ -2,8 +2,11 @@
 
 import { motion } from 'framer-motion';
 import { SKILLS } from '@/constants/skills';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function About() {
+    const { t } = useLanguage();
+
     return (
         <section id="about" className="py-24 md:py-32 bg-accents-1">
             <div className="container mx-auto px-6 max-w-4xl">
@@ -13,15 +16,12 @@ export default function About() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-3xl font-bold mb-12 tracking-tight">About Me</h2>
+                    <h2 className="text-3xl font-bold mb-12 tracking-tight">{t.about.title}</h2>
 
                     <div className="grid md:grid-cols-2 gap-12 md:gap-20">
                         <div className="space-y-6 text-lg text-accents-5 leading-relaxed">
                             <p>
-                                I&apos;m a passionate software engineer with expertise in building robust and efficient systems.
-                            </p>
-                            <p>
-                                With a strong foundation in software development, I specialize in creating scalable, maintainable, and efficient solutions. From web applications to backend systems, I love solving complex problems and turning ideas into reality through elegant code.
+                                {t.about.description}
                             </p>
                         </div>
 

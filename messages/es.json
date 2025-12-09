@@ -1,0 +1,39 @@
+{
+    "header": {
+        "about": "Sobre Mí",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "getInTouch": "En contacto"
+    },
+    "hero": {
+        "greeting": "Hola, soy",
+        "role": "Desarrollador Frontend",
+        "description": "Construyo soluciones de software escalables con un enfoque en código limpio y una experiencia de usuario excepcional.",
+        "viewWork": "Ver Mis Trabajos",
+        "contact": "Contacto"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "description": "Soy un desarrollador apasionado con un buen ojo para el diseño y un impulso para crear experiencias digitales fluidas. Con una base sólida en tecnologías web modernas, transformo requisitos complejos en soluciones elegantes y fáciles de usar."
+    },
+    "projects": {
+        "title": "Proyectos Seleccionados",
+        "viewProject": "Ver Proyecto",
+        "launchApp": "Abrir App",
+        "visit": "Visitar",
+        "code": "Código",
+        "private": "Privado"
+    },
+    "projectsList": {
+        "bmsintel": {
+            "title": "BMSIntel",
+            "description": "Plataforma de gestión de edificios todo en uno que unifica sistemas críticos para la optimización del rendimiento y el análisis predictivo. Cuenta con monitoreo IoT en tiempo real, supervisión de múltiples edificios y cifrado de extremo a extremo en una arquitectura blockchain privada."
+        }
+    },
+    "footer": {
+        "title": "Conectemos",
+        "description": "Abierto a nuevas oportunidades. Construyamos algo increíble juntos.",
+        "sayHello": "Di Hola",
+        "rights": "Todos los derechos reservados."
+    }
+}

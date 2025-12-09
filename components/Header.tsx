@@ -3,11 +3,13 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { CONTACT_INFO } from '@/constants/contact';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const { language, setLanguage, t } = useLanguage();
 
     // Lock body scroll when menu is open
     useEffect(() => {
@@ -19,9 +21,9 @@ export default function Header() {
     }, [isOpen]);
 
     const links = [
-        { name: 'About', href: '#about' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Contact', href: '#contact' },
+        { name: t.header.about, href: '#about' },
+        { name: t.header.projects, href: '#projects' },
+        { name: t.header.contact, href: '#contact' },
     ];
 
     const menuVariants: Variants = {
@@ -45,6 +47,10 @@ export default function Header() {
     const linkVariants: Variants = {
         closed: { y: 20, opacity: 0 },
         open: { y: 0, opacity: 1 }
+    };
+
+    const toggleLanguage = () => {
+        setLanguage(language === 'en' ? 'es' : 'en');
     };
 
     return (
@@ -79,16 +85,33 @@ export default function Header() {
                             </li>
                         ))}
                     </ul>
+                    <button
+                        onClick={toggleLanguage}
+                        className="p-2 text-accents-5 hover:text-foreground transition-colors flex items-center gap-2 cursor-pointer"
+                        aria-label="Switch Language"
+                    >
+                        <Globe size={20} />
+                        <span className="text-sm font-medium">{language.toUpperCase()}</span>
+                    </button>
                 </nav>
 
                 {/* Mobile Toggle */}
-                <button
-                    className="md:hidden z-50 p-2 -mr-2 text-foreground hover:opacity-70 transition-opacity"
-                    onClick={() => setIsOpen(!isOpen)}
-                    aria-label={isOpen ? "Close menu" : "Open menu"}
-                >
-                    {isOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+                <div className="md:hidden flex items-center gap-4 z-50">
+                    <button
+                        onClick={toggleLanguage}
+                        className="p-2 text-foreground hover:opacity-70 transition-opacity"
+                        aria-label="Switch Language"
+                    >
+                        <Globe size={20} />
+                    </button>
+                    <button
+                        className="p-2 -mr-2 text-foreground hover:opacity-70 transition-opacity"
+                        onClick={() => setIsOpen(!isOpen)}
+                        aria-label={isOpen ? "Close menu" : "Open menu"}
+                    >
+                        {isOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Full Screen Menu */}
@@ -105,7 +128,7 @@ export default function Header() {
                             <ul className="flex flex-col gap-6">
                                 {links.map((link) => (
                                     <motion.li
-                                        key={link.name}
+                                        key={link.href}
                                         variants={linkVariants}
                                     >
                                         <Link
@@ -124,7 +147,7 @@ export default function Header() {
                             variants={linkVariants}
                             className="mt-12 pt-12 border-t border-neutral-800 text-neutral-400"
                         >
-                            <p className="text-sm uppercase tracking-widest mb-4">Get in touch</p>
+                            <p className="text-sm uppercase tracking-widest mb-4">{t.header.getInTouch}</p>
                             <a href={`mailto:${CONTACT_INFO.emailAlt}`} className="text-lg text-white hover:underline">
                                 {CONTACT_INFO.emailAlt}
                             </a>

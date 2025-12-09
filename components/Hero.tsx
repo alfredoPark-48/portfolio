@@ -3,8 +3,11 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Hero() {
+    const { t } = useLanguage();
+
     return (
         <section className="min-h-[calc(100vh-80px)] flex items-center justify-center pb-20 pt-32 relative overflow-hidden">
             <div className="container mx-auto px-6 text-center z-10">
@@ -14,7 +17,7 @@ export default function Hero() {
                     transition={{ duration: 0.5 }}
                 >
                     <span className="text-sm font-medium text-accents-5 uppercase tracking-widest mb-4 block">
-                        Hi, I&apos;m
+                        {t.hero.greeting}
                     </span>
                 </motion.div>
 
@@ -33,7 +36,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                    I build scalable software solutions with a focus on clean code and exceptional user experience.
+                    {t.hero.description}
                 </motion.p>
 
                 <motion.div
@@ -46,14 +49,14 @@ export default function Hero() {
                         href="#projects"
                         className="group px-8 py-3 bg-foreground text-background rounded-full font-medium transition-all hover:scale-105 flex items-center gap-2"
                     >
-                        View My Work
+                        {t.hero.viewWork}
                         <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" suppressHydrationWarning />
                     </Link>
                     <Link
                         href="#contact"
                         className="px-8 py-3 border border-accents-2 rounded-full font-medium hover:bg-accents-1 transition-all"
                     >
-                        Contact
+                        {t.hero.contact}
                     </Link>
                 </motion.div>
             </div >

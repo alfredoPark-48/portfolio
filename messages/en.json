@@ -1,0 +1,39 @@
+{
+    "header": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "getInTouch": "Get in touch"
+    },
+    "hero": {
+        "greeting": "Hi, I'm",
+        "role": "Frontend Developer",
+        "description": "I build scalable software solutions with a focus on clean code and exceptional user experience.",
+        "viewWork": "View My Work",
+        "contact": "Contact"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "I'm a passionate developer with a keen eye for design and a drive for creating seamless digital experiences. With a strong foundation in modern web technologies, I transform complex requirements into elegant, user-friendly solutions."
+    },
+    "projects": {
+        "title": "Selected Projects",
+        "viewProject": "View Project",
+        "launchApp": "Launch App",
+        "visit": "Visit",
+        "code": "Code",
+        "private": "Private"
+    },
+    "projectsList": {
+        "bmsintel": {
+            "title": "BMSIntel",
+            "description": "All-in-one building management platform that unifies critical systems for performance optimization and predictive analytics. Features real-time IoT monitoring, multi-building oversight, and end-to-end encryption on a private blockchain architecture."
+        }
+    },
+    "footer": {
+        "title": "Let's Connect",
+        "description": "Open for new opportunities. Let's build something amazing together.",
+        "sayHello": "Say Hello",
+        "rights": "All rights reserved."
+    }
+}
