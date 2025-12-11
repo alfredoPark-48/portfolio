@@ -89,9 +89,10 @@ export default function Header() {
                         onClick={toggleLanguage}
                         className="p-2 text-accents-5 hover:text-foreground transition-colors flex items-center gap-2 cursor-pointer"
                         aria-label="Switch Language"
+                        suppressHydrationWarning
                     >
-                        <Globe size={20} />
-                        <span className="text-sm font-medium">{language.toUpperCase()}</span>
+                        <Globe size={20} suppressHydrationWarning />
+                        <span className="text-sm font-medium" suppressHydrationWarning>{language.toUpperCase()}</span>
                     </button>
                 </nav>
 
@@ -101,13 +102,15 @@ export default function Header() {
                         onClick={toggleLanguage}
                         className="p-2 text-foreground hover:opacity-70 transition-opacity"
                         aria-label="Switch Language"
+                        suppressHydrationWarning
                     >
-                        <Globe size={20} />
+                        <Globe size={20} suppressHydrationWarning />
                     </button>
                     <button
                         className="p-2 -mr-2 text-foreground hover:opacity-70 transition-opacity"
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label={isOpen ? "Close menu" : "Open menu"}
+                        suppressHydrationWarning
                     >
                         {isOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>

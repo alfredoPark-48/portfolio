@@ -31,6 +31,54 @@
             "description": "All-in-one building management platform that unifies critical systems for performance optimization and predictive analytics. Features real-time IoT monitoring, multi-building oversight, and end-to-end encryption on a private blockchain architecture."
         }
     },
+    "experience": {
+        "title": "Experience",
+        "jobs": [
+            {
+                "role": "Senior Software Engineer",
+                "company": "Rubidex",
+                "period": "March 2023 - Present",
+                "description": "Led the system architecture, development, and deployment of BMSIntel while mentoring junior team members.",
+                "contributions": [
+                    "Participated in the system and architecture design, development and deployment of BMSintel.",
+                    "Provided leadership, direction and supervision to junior level colleagues.",
+                    "Applied appropriate standards, processes, procedures and tools throughout the system development life cycle."
+                ],
+                "stack": [
+                    "Next.js",
+                    "NestJS",
+                    "PostgreSQL",
+                    "Redis",
+                    "Docker"
+                ]
+            },
+            {
+                "role": "Software Developer Intern",
+                "company": "Listo.mx",
+                "period": "Nov 2021 - May 2022",
+                "description": "Developed critical bill of lading features, enhanced code quality and developer workflows.",
+                "contributions": [
+                    "Developed a bill of lading module to extract bill of lading data from invoices and generate an excel summary.",
+                    "Implemented tests to ensure code quality.",
+                    "Updated environment setup for new developers."
+                ],
+                "stack": [
+                    "Django",
+                    "Scala"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Education",
+        "schools": [
+            {
+                "degree": "B.S. in Computer Science and Technology",
+                "institution": "Tecnológico de Monterrey",
+                "period": "Jan 2019 - Jun 2024"
+            }
+        ]
+    },
     "footer": {
         "title": "Let's Connect",
         "description": "Open for new opportunities. Let's build something amazing together.",

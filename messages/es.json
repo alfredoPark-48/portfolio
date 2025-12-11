@@ -31,6 +31,54 @@
             "description": "Plataforma de gestión de edificios todo en uno que unifica sistemas críticos para la optimización del rendimiento y el análisis predictivo. Cuenta con monitoreo IoT en tiempo real, supervisión de múltiples edificios y cifrado de extremo a extremo en una arquitectura blockchain privada."
         }
     },
+    "experience": {
+        "title": "Experiencia",
+        "jobs": [
+            {
+                "role": "Senior Software Engineer",
+                "company": "Rubidex",
+                "period": "Marzo 2023 - Presente",
+                "description": "Lideré la arquitectura del sistema, desarrollo y despliegue de BMSIntel, mentoreando a miembros junior del equipo.",
+                "contributions": [
+                    "Participé en el diseño del sistema y arquitectura, desarrollo y despliegue de BMSintel.",
+                    "Brindé liderazgo, dirección y supervisión a colegas de nivel junior.",
+                    "Apliqué estándares, procesos, procedimientos y herramientas apropiados durante todo el ciclo de vida del desarrollo del sistema."
+                ],
+                "stack": [
+                    "Next.js",
+                    "NestJS",
+                    "PostgreSQL",
+                    "Redis",
+                    "Docker"
+                ]
+            },
+            {
+                "role": "Software Developer Intern",
+                "company": "Listo.mx",
+                "period": "Nov 2021 - May 2022",
+                "description": "Desarrollé funciones críticas de cartas de porte, mejoré la calidad del código y flujos de trabajo.",
+                "contributions": [
+                    "Desarrollé un módulo de cartas de porte para extraer datos de facturas y generar un resumen en Excel.",
+                    "Implementé pruebas para asegurar la calidad del código.",
+                    "Actualicé la configuración del entorno para nuevos desarrolladores."
+                ],
+                "stack": [
+                    "Django",
+                    "Scala"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Educación",
+        "schools": [
+            {
+                "degree": "Ingeniería en Tecnologías Computacionales",
+                "institution": "Tecnológico de Monterrey",
+                "period": "Ene 2019 - Jun 2024"
+            }
+        ]
+    },
     "footer": {
         "title": "Conectemos",
         "description": "Abierto a nuevas oportunidades. Construyamos algo increíble juntos.",
