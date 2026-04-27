@@ -1,93 +1,97 @@
 {
-    "header": {
-        "about": "Sobre Mí",
-        "projects": "Proyectos",
-        "contact": "Contacto",
-        "getInTouch": "En contacto"
-    },
-    "hero": {
-        "greeting": "Hola, soy",
-        "role": "Desarrollador Frontend",
-        "description": "Construyo soluciones de software escalables con un enfoque en código limpio y una experiencia de usuario excepcional.",
-        "viewWork": "Ver Mis Trabajos",
-        "contact": "Contacto"
-    },
-    "about": {
-        "title": "Sobre mí",
-        "description": "Soy un desarrollador apasionado con un buen ojo para el diseño y un impulso para crear experiencias digitales fluidas. Con una base sólida en tecnologías web modernas, transformo requisitos complejos en soluciones elegantes y fáciles de usar.",
-        "skillsTitle": "Habilidades y Tecnologías"
-    },
-    "projects": {
-        "title": "Proyectos Seleccionados",
-        "viewProject": "Ver Proyecto",
-        "launchApp": "Abrir App",
-        "visit": "Visitar",
-        "code": "Código",
-        "private": "Privado"
-    },
-    "projectsList": {
-        "bmsintel": {
-            "title": "BMSIntel",
-            "description": "Plataforma de gestión de edificios todo en uno que unifica sistemas críticos para la optimización del rendimiento y el análisis predictivo. Cuenta con monitoreo IoT en tiempo real, supervisión de múltiples edificios y cifrado de extremo a extremo en una arquitectura blockchain privada."
-        }
-    },
-    "experience": {
-        "title": "Experiencia",
-        "jobs": [
-            {
-                "role": "Senior Software Engineer",
-                "company": "Rubidex",
-                "period": "Marzo 2023 - Presente",
-                "description": "Lideré la arquitectura del sistema, desarrollo y despliegue de BMSIntel, mentoreando a miembros junior del equipo.",
-                "contributions": [
-                    "Participé en el diseño del sistema y arquitectura, desarrollo y despliegue de BMSintel.",
-                    "Brindé liderazgo, dirección y supervisión a colegas de nivel junior.",
-                    "Apliqué estándares, procesos, procedimientos y herramientas apropiados durante todo el ciclo de vida del desarrollo del sistema."
-                ],
-                "stack": [
-                    "Next.js",
-                    "NestJS",
-                    "PostgreSQL",
-                    "Redis",
-                    "Docker"
-                ]
-            },
-            {
-                "role": "Software Developer Intern",
-                "company": "Listo.mx",
-                "period": "Nov 2021 - May 2022",
-                "description": "Desarrollé funciones críticas de cartas de porte, mejoré la calidad del código y flujos de trabajo.",
-                "contributions": [
-                    "Desarrollé un módulo de cartas de porte para extraer datos de facturas y generar un resumen en Excel.",
-                    "Implementé pruebas para asegurar la calidad del código.",
-                    "Actualicé la configuración del entorno para nuevos desarrolladores."
-                ],
-                "stack": [
-                    "Django",
-                    "Scala"
-                ]
-            }
-        ]
-    },
-    "education": {
-        "title": "Educación",
-        "schools": [
-            {
-                "degree": "Ingeniería en Tecnologías Computacionales",
-                "institution": "Tecnológico de Monterrey",
-                "period": "Ene 2019 - Jun 2024"
-            }
-        ]
-    },
-    "footer": {
-        "title": "Conectemos",
-        "description": "Abierto a nuevas oportunidades. Construyamos algo increíble juntos.",
-        "sayHello": "Di Hola",
-        "rights": "Todos los derechos reservados."
-    },
-    "notFound": {
-        "title": "404",
-        "description": "La página que buscas no existe.",
-        "backHome": "Volver al Inicio"
+  "header": {
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "getInTouch": "En contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "role": "Desarrollador Frontend",
+    "description": "Construyo soluciones de software escalables con un enfoque en código limpio y una experiencia de usuario excepcional.",
+    "viewWork": "Ver Mis Trabajos",
+    "contact": "Contacto",
+    "downloadCV": "Descargar CV",
+    "cvUrl": "/resume/AlfredoCVSpanish.pdf"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador apasionado con un buen ojo para el diseño y un impulso para crear experiencias digitales fluidas. Con una base sólida en tecnologías web modernas, transformo requisitos complejos en soluciones elegantes y fáciles de usar.",
+    "skillsTitle": "Habilidades y Tecnologías"
+  },
+  "projects": {
+    "title": "Proyectos Seleccionados",
+    "viewProject": "Ver Proyecto",
+    "launchApp": "Abrir App",
+    "visit": "Visitar",
+    "code": "Código",
+    "private": "Privado"
+  },
+  "projectsList": {
+    "bmsintel": {
+      "title": "BMSIntel",
+      "description": "Plataforma de gestión de edificios todo en uno que unifica sistemas críticos para la optimización del rendimiento y el análisis predictivo. Cuenta con monitoreo IoT en tiempo real, supervisión de múltiples edificios y cifrado de extremo a extremo en una arquitectura blockchain privada."
     }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "keyContributions": "Contribuciones Clave",
+    "jobs": [
+      {
+        "role": "Ingeniero Full Stack",
+        "seniority": "Senior",
+        "company": "Rubidex",
+        "logo": "/images/logos/rubidex-logo.png",
+        "url": "https://rubidex.ai",
+        "period": "Marzo 2023 - Presente",
+        "description": "Contribuí al diseño de arquitectura, desarrollo y despliegue de un Sistema de Gestión de Edificios (BMS) construido con Next.js, NestJS y PostgreSQL.",
+        "contributions": [
+          "Diseñé APIs RESTful, esquemas de base de datos e integración con WebSocket para la ingesta de datos de sensores en tiempo real y control de dispositivos.",
+          "Desarrollé dashboards interactivos con control de acceso basado en roles para visualizar métricas de HVAC, iluminación y ocupación.",
+          "Containericé la aplicación usando Docker y configuré pipelines de CI/CD para despliegues automatizados.",
+          "Brindé liderazgo, dirección y supervisión a equipos y empleados junior.",
+          "Apliqué estándares, procesos, procedimientos y herramientas adecuados durante todo el ciclo de vida del desarrollo de software para apoyar la generación de productos técnicos de ingeniería."
+        ],
+        "stack": ["Next.js", "NestJS", "PostgreSQL", "Redis", "Docker"]
+      },
+      {
+        "role": "Desarrollador de Software",
+        "seniority": "Becario",
+        "company": "Listo.mx",
+        "logo": "/images/logos/listomx-logo.png",
+        "url": "https://listo.mx",
+        "period": "Nov 2021 - May 2022",
+        "description": "Extraje y sinteticé datos de estados de cuenta financieros para generar reportes personalizados en PDF.",
+        "contributions": [
+          "Extraje datos clave de facturas y los presenté dinámicamente en la interfaz de usuario usando Django.",
+          "Implementé pruebas automatizadas para garantizar la calidad del código y detectar errores durante el despliegue.",
+          "Actualicé la configuración del entorno de desarrollo para agilizar la incorporación de futuros desarrolladores."
+        ],
+        "stack": ["Django", "Scala"]
+      }
+    ]
+  },
+  "education": {
+    "title": "Educación",
+    "schools": [
+      {
+        "degree": "Ingeniería en Tecnologías Computacionales",
+        "institution": "Tecnológico de Monterrey",
+        "period": "Ene 2019 - Jun 2024",
+        "logo": "/images/logos/tec-logo.svg",
+        "link": "https://tec.mx/es/ingenieria-y-ciencias/ingenieria-en-tecnologias-computacionales"
+      }
+    ]
+  },
+  "footer": {
+    "title": "Conectemos",
+    "description": "Abierto a nuevas oportunidades. Construyamos algo increíble juntos.",
+    "sayHello": "Di Hola",
+    "rights": "Todos los derechos reservados."
+  },
+  "notFound": {
+    "title": "404",
+    "description": "La página que buscas no existe.",
+    "backHome": "Volver al Inicio"
+  }
 }

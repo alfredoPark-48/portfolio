@@ -20,6 +20,6 @@ export const PROJECTS: Project[] = [
     appLink: "https://app.bmsintel.com/login",
     githubLink: "#",
     image: "/images/projects/bms-intel.png",
-    gradient: "from-blue-500 to-purple-600"
-  }
+    gradient: "from-blue-500 to-purple-600",
+  },
 ];

@@ -18,7 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Alfredo Park | Portfolio",
-  description: "Senior Software Engineer specializing in secure data solutions and scalable web architecture.",
+  description:
+    "Senior Software Engineer specializing in secure data solutions and scalable web architecture.",
 };
 
 export default function RootLayout({
@@ -35,9 +36,7 @@ export default function RootLayout({
         <LanguageProvider>
           <Background />
           <Header />
-          <main className="flex-grow">
-            {children}
-          </main>
+          <main className="flex-grow">{children}</main>
           <Footer />
         </LanguageProvider>
       </body>
