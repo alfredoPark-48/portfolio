@@ -52,10 +52,11 @@ export default function Experience() {
                     href={job.url}
                     target={job.url ? "_blank" : undefined}
                     rel={job.url ? "noopener noreferrer" : undefined}
-                    className={`group relative block bg-background border border-accents-2 hover:border-accents-4 p-6 sm:p-8 md:p-10 rounded-4xl transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-accents-2/30 hover:-translate-y-1.5 ${job.url ? "cursor-pointer" : ""}`}
+                    className={`group relative overflow-hidden block bg-background border border-accents-2 hover:border-accents-4 p-6 sm:p-8 md:p-10 rounded-4xl transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-accents-2/30 hover:-translate-y-1.5 ${job.url ? "cursor-pointer" : ""}`}
                   >
-                    {/* Decorative gradient overlay */}
-                    <div className="absolute inset-0 bg-linear-to-br from-foreground/3 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-4xl pointer-events-none" />
+                    {/* Decorative glow orbs — always visible, brighten on hover */}
+                    <div className="absolute -top-24 -right-24 w-64 h-64 bg-foreground/5 rounded-full blur-3xl group-hover:bg-foreground/10 transition-colors duration-500 pointer-events-none" />
+                    <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-foreground/5 rounded-full blur-3xl group-hover:bg-foreground/10 transition-colors duration-500 pointer-events-none" />
 
                     <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-8">
                       <div className="flex flex-col sm:flex-row sm:items-center gap-5 shrink-0">

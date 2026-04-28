@@ -27,8 +27,8 @@ export default function About() {
               </div>
             </div>
 
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-accents-4 mb-6">
+            <div className="border-t border-accents-2 pt-10 md:border-0 md:pt-0">
+              <h3 className="text-sm font-bold uppercase tracking-wider text-accents-4 mb-6">
                 {t.about.skillsTitle}
               </h3>
               <div className="flex flex-wrap gap-2">

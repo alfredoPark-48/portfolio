@@ -13,7 +13,7 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     id: "bmsintel",
-    title: "BMSIntel",
+    title: "BMS Intel",
     description: "All-in-one building management...", // Fallback/Reference
     tags: ["Next.js", "TypeScript", "NestJS", "PostgreSQL"],
     link: "https://bmsintel.com/",
