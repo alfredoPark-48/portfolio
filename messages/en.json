@@ -34,7 +34,7 @@
     },
     "citycommute": {
       "title": "CityCommute",
-      "description": "High-fidelity agent-based urban mobility simulation engine. Features real-time visualization of multi-modal transport (cars, pedestrians, buses) using A* pathfinding, Clean Architecture, and high-performance WebSockets. Provides deep analytics on traffic efficiency and agent behavior."
+      "description": "High-fidelity agent-based urban mobility simulation engine. Features real-time visualization of multi-modal transport (cars, pedestrians, buses) using A* pathfinding and high-performance WebSockets. Provides deep analytics on traffic efficiency and agent behavior."
     }
   },
   "experience": {
@@ -56,7 +56,13 @@
           "Provided leadership, direction, and supervision to junior employees and teams.",
           "Applied appropriate standards, processes, procedures, and tools throughout the system development life cycle to support technical engineering products."
         ],
-        "stack": ["Next.js", "NestJS", "PostgreSQL", "Redis", "Docker"]
+        "stack": [
+          "Next.js",
+          "NestJS",
+          "PostgreSQL",
+          "Redis",
+          "Docker"
+        ]
       },
       {
         "role": "Software Developer",
@@ -71,7 +77,10 @@
           "Implemented automated tests to ensure code quality and detect errors during deployment.",
           "Updated the development environment setup to streamline onboarding for future developers."
         ],
-        "stack": ["Django", "Scala"]
+        "stack": [
+          "Django",
+          "Scala"
+        ]
       }
     ]
   },

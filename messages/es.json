@@ -34,7 +34,7 @@
     },
     "citycommute": {
       "title": "CityCommute",
-      "description": "Motor de simulación de movilidad urbana basado en agentes de alta fidelidad. Presenta visualización en tiempo real de transporte multimodal (coches, peatones, autobuses) utilizando búsqueda de caminos A*, Arquitectura Limpia y WebSockets de alto rendimiento. Proporciona análisis profundos sobre la eficiencia del tráfico y el comportamiento de los agentes."
+      "description": "Motor de simulación de movilidad urbana basado en agentes de alta fidelidad. Presenta visualización en tiempo real de transporte multimodal (coches, peatones, autobuses) utilizando búsqueda de caminos A* y WebSockets de alto rendimiento. Proporciona análisis profundos sobre la eficiencia del tráfico y el comportamiento de los agentes."
     }
   },
   "experience": {
@@ -56,7 +56,13 @@
           "Brindé liderazgo, dirección y supervisión a equipos y empleados junior.",
           "Apliqué estándares, procesos, procedimientos y herramientas adecuados durante todo el ciclo de vida del desarrollo de software para apoyar la generación de productos técnicos de ingeniería."
         ],
-        "stack": ["Next.js", "NestJS", "PostgreSQL", "Redis", "Docker"]
+        "stack": [
+          "Next.js",
+          "NestJS",
+          "PostgreSQL",
+          "Redis",
+          "Docker"
+        ]
       },
       {
         "role": "Desarrollador de Software",
@@ -71,7 +77,10 @@
           "Implementé pruebas automatizadas para garantizar la calidad del código y detectar errores durante el despliegue.",
           "Actualicé la configuración del entorno de desarrollo para agilizar la incorporación de futuros desarrolladores."
         ],
-        "stack": ["Django", "Scala"]
+        "stack": [
+          "Django",
+          "Scala"
+        ]
       }
     ]
   },
