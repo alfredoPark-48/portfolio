@@ -31,6 +31,10 @@
     "bmsintel": {
       "title": "BMS Intel",
       "description": "All-in-one building management platform that unifies critical systems for performance optimization and predictive analytics. Features real-time IoT monitoring, multi-building oversight, and end-to-end encryption."
+    },
+    "citycommute": {
+      "title": "CityCommute",
+      "description": "High-fidelity agent-based urban mobility simulation engine. Features real-time visualization of multi-modal transport (cars, pedestrians, buses) using A* pathfinding, Clean Architecture, and high-performance WebSockets. Provides deep analytics on traffic efficiency and agent behavior."
     }
   },
   "experience": {

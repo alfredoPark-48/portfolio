@@ -31,6 +31,10 @@
     "bmsintel": {
       "title": "BMS Intel",
       "description": "Plataforma de gestión de edificios todo en uno que unifica sistemas críticos para la optimización del rendimiento y el análisis predictivo. Cuenta con monitoreo IoT en tiempo real, supervisión de múltiples edificios y cifrado de extremo a extremo."
+    },
+    "citycommute": {
+      "title": "CityCommute",
+      "description": "Motor de simulación de movilidad urbana basado en agentes de alta fidelidad. Presenta visualización en tiempo real de transporte multimodal (coches, peatones, autobuses) utilizando búsqueda de caminos A*, Arquitectura Limpia y WebSockets de alto rendimiento. Proporciona análisis profundos sobre la eficiencia del tráfico y el comportamiento de los agentes."
     }
   },
   "experience": {
