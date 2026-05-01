@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
     id: "citycommute",
     title: "CityCommute",
     description: "High-fidelity agent-based urban mobility simulation.",
-    tags: ["Python", "Mesa", "React", "Vite", "TypeScript", "FastAPI"],
+    tags: ["React", "Vite", "TypeScript", "FastAPI", "Mesa", "Python"],
     link: "https://citycommute-client.parkalfredojeonghyun.workers.dev",
     githubLink: "https://github.com/alfredoPark-48/citycommute-client",
     image: "/images/projects/citycommute.png",

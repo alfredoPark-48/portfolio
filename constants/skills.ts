@@ -66,5 +66,9 @@ export const SKILLS = [
   {
     name: "Vite",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+  },
+  {
+    name: "FastAPI",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
   }
 ];
