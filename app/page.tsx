@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects";
@@ -9,6 +10,7 @@ export default function Page() {
     <div className="flex-col gap-0 w-full">
       <Hero />
       <About />
+      <Skills />
       <Experience />
       <Education />
       <Projects />

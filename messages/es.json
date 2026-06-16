@@ -1,6 +1,7 @@
 {
   "header": {
     "about": "Sobre Mí",
+    "skills": "Habilidades",
     "projects": "Proyectos",
     "contact": "Contacto",
     "getInTouch": "En contacto"
@@ -16,8 +17,16 @@
   },
   "about": {
     "title": "Sobre mí",
-    "description": "Soy un desarrollador apasionado con un buen ojo para el diseño y un impulso para crear experiencias digitales fluidas. Con una base sólida en tecnologías web modernas, transformo requisitos complejos en soluciones elegantes y fáciles de usar.",
-    "skillsTitle": "Habilidades y Tecnologías"
+    "highlight": "Construyendo software de alto rendimiento con código limpio y arquitectura robusta.",
+    "description": "Soy un desarrollador apasionado con un buen ojo para el diseño y un impulso para crear experiencias digitales fluidas. Con una base sólida en tecnologías web modernas, transformo requisitos complejos en soluciones elegantes y fáciles de usar."
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "categories": {
+      "languages": "Lenguajes",
+      "frameworks": "Frameworks y Librerías",
+      "tools": "Bases de Datos y Herramientas"
+    }
   },
   "projects": {
     "title": "Proyectos Seleccionados",

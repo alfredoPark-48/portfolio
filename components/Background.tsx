@@ -1,36 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-
-const codeSnippets = [
-  'import React from "react";',
-  "function App() {",
-  "  const [state, setState] = useState(null);",
-  "  return <Component />;",
-  "}",
-  'const data = await fetch("/api/data");',
-  'if (error) throw new Error("Failed");',
-  "npm install next react react-dom",
-  'git commit -m "Initial commit"',
-  'console.log("Hello World");',
-  "export default function Page() {}",
-  "array.map(item => item.id)",
-  "useEffect(() => {}, []);",
-  "def main():",
-  "import pandas as pd",
-  'if __name__ == "__main__":',
-  'print("Hello World")',
-  "class MyModel(nn.Module):",
-  "pip install numpy pandas",
-  "git status",
-  "git add .",
-  "git push origin main",
-  "git pull origin main",
-  "npm run build",
-  "npm run start",
-  "npm run dev",
-  "npm run test",
-];
+import { CODE_SNIPPETS } from "@/constants/codeSnippets";
 
 class Particle {
   x: number;
@@ -45,7 +16,7 @@ class Particle {
     const { width, height } = this.bounds();
     this.x = Math.random() * width;
     this.y = Math.random() * height;
-    this.text = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
+    this.text = CODE_SNIPPETS[Math.floor(Math.random() * CODE_SNIPPETS.length)];
     this.speed = Math.random() * 0.5 + 0.1;
     this.opacity = Math.random() * 0.3 + 0.1;
   }
@@ -56,7 +27,7 @@ class Particle {
     if (this.y < -50) {
       this.y = height + 50;
       this.x = Math.random() * width;
-      this.text = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
+      this.text = CODE_SNIPPETS[Math.floor(Math.random() * CODE_SNIPPETS.length)];
     }
   }
 

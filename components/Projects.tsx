@@ -12,29 +12,30 @@ export default function Projects() {
   const { t } = useLanguage();
 
   return (
-    <section id="projects" className="py-24 px-6">
-      <div className="max-w-7xl mx-auto">
+    <section id="projects" className="py-24 bg-accents-1 border-t border-accents-2/30 border-b border-accents-2/30">
+      <div className="container mx-auto px-6 max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6 }}
+          className="mb-20 flex flex-col items-start"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-accents-5">
+          <span className="text-sm font-bold uppercase tracking-widest text-accents-4 block mb-4">
             {t.projects.title}
-          </h2>
+          </span>
+          <div className="h-[2px] w-10 bg-foreground/30 mt-1 rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PROJECTS.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{ y: -5 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group flex flex-col bg-accents-1 border border-accents-2 rounded-2xl overflow-hidden"
+              transition={{ delay: index * 0.1, duration: 0.6 }}
+              className="group flex flex-col bg-background border border-accents-2 hover:border-accents-4 rounded-3xl overflow-hidden transition-all duration-600 ease-[cubic-bezier(0.16,1,0.3,1)] hover:shadow-[0_30px_70px_-15px_rgba(0,0,0,0.06)] dark:hover:shadow-[0_30px_70px_-15px_rgba(0,0,0,0.4)] hover:-translate-y-1.5"
             >
               {project.image ? (
                 <div className="relative h-48 w-full overflow-hidden">
@@ -67,21 +68,21 @@ export default function Projects() {
                     return (
                       <span
                         key={tag}
-                        className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 bg-background border border-accents-2 rounded-full text-accents-6 group/skill hover:border-accents-4 transition-colors cursor-default"
+                        className="px-3 py-1.5 bg-accents-1/60 dark:bg-accents-1/30 border border-accents-2/70 hover:border-accents-4 dark:hover:border-accents-5 rounded-xl text-xs font-semibold text-accents-6 hover:text-foreground transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105 hover:-translate-y-0.5 cursor-default flex items-center gap-2 group/skill shadow-xs hover:shadow-md hover:bg-background"
                       >
                         {skillInfo && (
-                          <div className="w-3.5 h-3.5 relative flex items-center justify-center shrink-0">
+                          <div className="w-4 h-4 relative flex items-center justify-center shrink-0 select-none pointer-events-none overflow-hidden">
                             <Image
                               src={skillInfo.logo}
                               alt={tag}
                               fill
-                              className={`object-contain filter group-hover/skill:scale-110 transition-transform duration-300 opacity-80 group-hover/skill:opacity-100 ${
+                              className={`object-contain filter group-hover/skill:scale-115 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                                 skillInfo.invertDark ? "dark:brightness-0 dark:invert" : ""
                               }`}
                             />
                           </div>
                         )}
-                        {tag}
+                        <span>{tag}</span>
                       </span>
                     );
                   })}

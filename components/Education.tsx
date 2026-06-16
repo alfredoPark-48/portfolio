@@ -11,7 +11,7 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="py-24 bg-accents-1 border-t border-accents-2"
+      className="py-24 bg-background border-t border-accents-2/30"
     >
       <div className="container mx-auto px-6 max-w-4xl">
         <motion.div
@@ -20,13 +20,11 @@ export default function Education() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex items-center gap-4 mb-16">
-            <div className="p-3 bg-background rounded-xl border border-accents-2">
-              <GraduationCap className="w-6 h-6 text-foreground" />
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-foreground to-accents-5">
+          <div className="mb-16 flex flex-col items-start">
+            <span className="text-sm font-bold uppercase tracking-widest text-accents-4 block mb-4">
               {t.education.title}
-            </h2>
+            </span>
+            <div className="h-[2px] w-10 bg-foreground/30 mt-1 rounded-full" />
           </div>
 
           <div className="flex flex-col gap-8">
@@ -40,7 +38,7 @@ export default function Education() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className={`group relative overflow-hidden p-6 sm:p-8 md:p-10 bg-background rounded-3xl border border-accents-2 hover:border-accents-4 transition-all duration-500 hover:shadow-2xl shadow-accents-2/20 hover:-translate-y-1.5 block ${school.link ? "cursor-pointer" : ""}`}
+                className={`group relative overflow-hidden p-6 sm:p-8 md:p-10 bg-accents-1/50 border border-accents-2 hover:border-accents-4 rounded-3xl transition-all duration-600 ease-[cubic-bezier(0.16,1,0.3,1)] hover:shadow-[0_30px_70px_-15px_rgba(0,0,0,0.06)] dark:hover:shadow-[0_30px_70px_-15px_rgba(0,0,0,0.4)] hover:-translate-y-1.5 block ${school.link ? "cursor-pointer" : ""}`}
               >
                 {/* Decorative background element */}
                 <div className="absolute -top-24 -right-24 w-64 h-64 bg-foreground/5 rounded-full blur-3xl group-hover:bg-foreground/10 transition-colors duration-500" />
