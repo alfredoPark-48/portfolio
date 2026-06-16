@@ -42,6 +42,20 @@
     "keyContributions": "Contribuciones Clave",
     "jobs": [
       {
+        "role": "Ingeniero Backend",
+        "seniority": "Senior",
+        "company": "Smart Payment Services",
+        "logo": "/images/logos/sps-logo.png",
+        "url": "https://smartpayment.com.mx",
+        "period": "Junio 2026 - Presente",
+        "stack": [
+          "Go",
+          "Rust",
+          "Python",
+          "Java"
+        ]
+      },
+      {
         "role": "Ingeniero Full Stack",
         "seniority": "Senior",
         "company": "Rubidex",
@@ -50,11 +64,12 @@
         "period": "Marzo 2023 - Presente",
         "description": "Contribuí al diseño de arquitectura, desarrollo y despliegue de un Sistema de Gestión de Edificios (BMS) construido con Next.js, NestJS y PostgreSQL.",
         "contributions": [
-          "Diseñé APIs RESTful, esquemas de base de datos e integración con WebSocket para la ingesta de datos de sensores en tiempo real y control de dispositivos.",
-          "Desarrollé dashboards interactivos con control de acceso basado en roles para visualizar métricas de HVAC, iluminación y ocupación.",
-          "Containericé la aplicación usando Docker y configuré pipelines de CI/CD para despliegues automatizados.",
-          "Brindé liderazgo, dirección y supervisión a equipos y empleados junior.",
-          "Apliqué estándares, procesos, procedimientos y herramientas adecuados durante todo el ciclo de vida del desarrollo de software para apoyar la generación de productos técnicos de ingeniería."
+          "Lideré la arquitectura y el desarrollo de BMS Intel, un sistema de gestión de edificios a gran escala construido con Next.js, NestJS y PostgreSQL, que permite el control de dispositivos industriales en tiempo real a través de WebSockets.",
+          "Lideré una migración de ID en todo el sistema (UUID numérico/cadena) en más de 100 archivos, permitiendo escalabilidad global y consistencia entre servicios.",
+          "Diseñé sistemas troncales críticos, incluyendo un módulo de órdenes de trabajo y un sistema de ejecución de comandos con seguimiento de solicitudes basado en UUID para un control de hardware confiable.",
+          "Construí infraestructura de plataforma compartida que incluye un servicio de archivos centralizado y un motor de metadatos de hardware con sincronización con GitHub y caché de Redis.",
+          "Implementé sistemas de autenticación avanzados que incluyen Passkeys (WebAuthn), códigos de respaldo y flujos de desafío basados en Redis.",
+          "Arquitecturé y escalé una plataforma de administración multi-tenant e infraestructura de producción utilizando Docker y CI/CD, compatible con múltiples productos."
         ],
         "stack": [
           "Next.js",
@@ -73,9 +88,10 @@
         "period": "Nov 2021 - May 2022",
         "description": "Extraje y sinteticé datos de estados de cuenta financieros para generar reportes personalizados en PDF.",
         "contributions": [
-          "Extraje datos clave de facturas y los presenté dinámicamente en la interfaz de usuario usando Django.",
-          "Implementé pruebas automatizadas para garantizar la calidad del código y detectar errores durante el despliegue.",
-          "Actualicé la configuración del entorno de desarrollo para agilizar la incorporación de futuros desarrolladores."
+          "Desarrollé reportes personalizados en PDF mediante la extracción y síntesis de datos de estados de cuenta financieros.",
+          "Utilicé Django para presentar dinámicamente datos clave de facturas en la interfaz de usuario.",
+          "Implementé pruebas automatizadas para garantizar la calidad del código y agilizar los procesos de despliegue.",
+          "Mejoré la configuración del entorno de desarrollo para facilitar la incorporación de futuros desarrolladores en Listo Servicios Digitales."
         ],
         "stack": [
           "Django",

@@ -46,7 +46,9 @@ export default function About() {
                         src={skill.logo}
                         alt={skill.name}
                         fill
-                        className="object-contain filter group-hover:scale-110 transition-transform duration-300"
+                        className={`object-contain filter group-hover:scale-110 transition-transform duration-300 ${
+                          skill.invertDark ? "dark:brightness-0 dark:invert" : ""
+                        }`}
                       />
                     </div>
                     <span>{skill.name}</span>

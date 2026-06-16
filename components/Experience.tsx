@@ -143,7 +143,9 @@ export default function Experience() {
                                     src={skillInfo.logo}
                                     alt={tech}
                                     fill
-                                    className="object-contain filter group-hover/skill:scale-110 transition-transform duration-300 opacity-80 group-hover/skill:opacity-100 group-hover/skill:brightness-110"
+                                    className={`object-contain filter group-hover/skill:scale-110 transition-transform duration-300 opacity-80 group-hover/skill:opacity-100 group-hover/skill:brightness-110 ${
+                                      skillInfo.invertDark ? "dark:brightness-0 dark:invert" : ""
+                                    }`}
                                   />
                                 </div>
                               )}

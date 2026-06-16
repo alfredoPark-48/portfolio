@@ -5,7 +5,12 @@ export const SKILLS = [
   },
   {
     name: "Next.js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg",
+    invertDark: true,
+  },
+  {
+    name: "JavaScript",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg",
   },
   {
     name: "TypeScript",
@@ -30,6 +35,7 @@ export const SKILLS = [
   {
     name: "Django",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
+    invertDark: true,
   },
   {
     name: "Scala",
@@ -54,6 +60,7 @@ export const SKILLS = [
   {
     name: "Unity",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg",
+    invertDark: true,
   },
   {
     name: "C++",
@@ -65,10 +72,23 @@ export const SKILLS = [
   },
   {
     name: "Vite",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
   },
   {
     name: "FastAPI",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
-  }
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
+  },
+  {
+    name: "Go",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg",
+  },
+  {
+    name: "Java",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+  },
+  {
+    name: "Rust",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+    invertDark: true,
+  },
 ];

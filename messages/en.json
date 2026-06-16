@@ -42,19 +42,34 @@
     "keyContributions": "Key Contributions",
     "jobs": [
       {
+        "role": "Backend Engineer",
+        "seniority": "Senior",
+        "company": "Smart Payment Services",
+        "logo": "/images/logos/sps-logo.png",
+        "url": "https://smartpayment.com.mx",
+        "period": "June 2026 - Present",
+        "stack": [
+          "Go",
+          "Rust",
+          "Python",
+          "Java"
+        ]
+      },
+      {
         "role": "Full Stack Engineer",
         "seniority": "Senior",
         "company": "Rubidex",
         "logo": "/images/logos/rubidex-logo.png",
         "url": "https://rubidex.ai",
-        "period": "March 2023 - Present",
-        "description": "Contributed to system architecture, development, and deployment of a Building Management System (BMS) built with Next.js, NestJS, and PostgreSQL.",
+        "period": "March 2023 - June 2026",
+        "description": "Led the architecture, core software development, and multi-tenant infrastructure deployment for BMS Intel, a large-scale Building Management System utilizing Next.js, NestJS, PostgreSQL, and WebSockets.",
         "contributions": [
-          "Designed RESTful APIs, database schemas, and WebSocket integration for real-time sensor data ingestion and device control.",
-          "Developed interactive dashboards with role-based access control for visualizing HVAC, lighting, and occupancy metrics.",
-          "Containerized the application using Docker and configured CI/CD pipelines for automated deployments.",
-          "Provided leadership, direction, and supervision to junior employees and teams.",
-          "Applied appropriate standards, processes, procedures, and tools throughout the system development life cycle to support technical engineering products."
+          "Led the architecture and development of BMS Intel, a large-scale Building Management System built with Next.js, NestJS, and PostgreSQL, enabling real-time industrial device control via WebSockets.",
+          "Led a system-wide ID migration (numeric UUID/string) across 100+ files, enabling global scalability and cross-service consistency.",
+          "Architected core backend systems including a Work Order module and a command execution system with UUID-based request tracking for reliable hardware control.",
+          "Built shared platform infrastructure including a centralized File Service and a hardware metadata engine with GitHub synchronization and Redis caching.",
+          "Implemented advanced authentication systems including Passkeys (WebAuthn), backup codes, and Redis-based challenge flows.",
+          "Architected and scaled a multi-tenant admin platform and production infrastructure using Docker and CI/CD, supporting multiple products."
         ],
         "stack": [
           "Next.js",
@@ -71,11 +86,12 @@
         "logo": "/images/logos/listomx-logo.png",
         "url": "https://listo.mx",
         "period": "Nov 2021 - May 2022",
-        "description": "Extracted and synthesized data from financial account statements to generate personalized PDF summary reports.",
+        "description": "Developed automated data extraction pipelines, custom PDF reporting systems, and dynamic invoice visualization interfaces using Django and Scala.",
         "contributions": [
-          "Extracted key data from invoices and presented it dynamically in the user interface using Django.",
-          "Implemented automated tests to ensure code quality and detect errors during deployment.",
-          "Updated the development environment setup to streamline onboarding for future developers."
+          "Developed personalized PDF summary reports by extracting and synthesizing data from financial account statements.",
+          "Utilized Django to dynamically present key data from invoices in the user interface.",
+          "Implemented automated tests to ensure code quality and streamline deployment processes.",
+          "Enhanced the development environment setup to facilitate onboarding for future developers at Listo Servicios Digitales."
         ],
         "stack": [
           "Django",

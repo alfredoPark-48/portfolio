@@ -75,7 +75,9 @@ export default function Projects() {
                               src={skillInfo.logo}
                               alt={tag}
                               fill
-                              className="object-contain filter group-hover/skill:scale-110 transition-transform duration-300 opacity-80 group-hover/skill:opacity-100"
+                              className={`object-contain filter group-hover/skill:scale-110 transition-transform duration-300 opacity-80 group-hover/skill:opacity-100 ${
+                                skillInfo.invertDark ? "dark:brightness-0 dark:invert" : ""
+                              }`}
                             />
                           </div>
                         )}
