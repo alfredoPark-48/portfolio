@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { SKILLS, Skill } from "@/constants/skills";
+import { SKILLS } from "@/constants/skills";
+import { Skill } from "@/types";
 import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 import { Terminal, Layers, Database } from "lucide-react";

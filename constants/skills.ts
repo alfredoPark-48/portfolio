@@ -1,9 +1,4 @@
-export interface Skill {
-  name: string;
-  logo: string;
-  category: "languages" | "frameworks" | "tools";
-  invertDark?: boolean;
-}
+import { Skill } from "@/types";
 
 export const SKILLS: Skill[] = [
   {
