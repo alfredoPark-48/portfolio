@@ -59,11 +59,20 @@
         "logo": "/images/logos/sps-logo.png",
         "url": "https://smartpayment.com.mx",
         "period": "Junio 2026 - Presente",
+        "description": "Ingeniero líder de notificaciones en tiempo real para Next360, la plataforma central de pagos de la empresa, con responsabilidad end-to-end de un microservicio en Go sobre AWS EKS y del endurecimiento de seguridad del gateway de autenticación en Java.",
+        "contributions": [
+          "Construí nxt-msa-notifications desde cero, un microservicio en Go que entrega notificaciones en tiempo real para la plataforma de pagos Next360 con latencia p99 menor a 85 ms.",
+          "Implementé el versionado /api/v2 en los microservicios de login y usuarios y lo liberé sin interrumpir el servicio, dejando la versión anterior y la nueva funcionando al mismo tiempo para que los sistemas que ya consumían la API no se vieran afectados.",
+          "Encontré la causa de una falla de login que frenaba una liberación revisándola directamente en los pods desplegados en lugar de confiar en el código, y vi que el envío del código OTP fallaba por tres configuraciones incorrectas que corregí antes de que llegaran a producción.",
+          "Propuse y lideré la migración del frontend de npm a pnpm, reforzando la seguridad de la cadena de suministro y adelantándome a los CVE del CLI de npm de finales de 2026 y a los paquetes comprometidos de Shai-Hulud."
+        ],
         "stack": [
           "Go",
-          "Rust",
-          "Python",
-          "Java"
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "Kubernetes",
+          "Docker"
         ]
       },
       {
@@ -72,15 +81,13 @@
         "company": "Rubidex",
         "logo": "/images/logos/rubidex-logo.png",
         "url": "https://rubidex.ai",
-        "period": "Marzo 2023 - Presente",
-        "description": "Contribuí al diseño de arquitectura, desarrollo y despliegue de un Sistema de Gestión de Edificios (BMS) construido con Next.js, NestJS y PostgreSQL.",
+        "period": "Marzo 2023 - Junio 2026",
+        "description": "Lideré la arquitectura, el desarrollo del software central y la infraestructura multi-tenant de BMS Intel, un sistema de gestión de edificios a gran escala construido con Next.js, NestJS y PostgreSQL.",
         "contributions": [
-          "Lideré la arquitectura y el desarrollo de BMS Intel, un sistema de gestión de edificios a gran escala construido con Next.js, NestJS y PostgreSQL, que permite el control de dispositivos industriales en tiempo real a través de WebSockets.",
-          "Lideré una migración de ID en todo el sistema (UUID numérico/cadena) en más de 100 archivos, permitiendo escalabilidad global y consistencia entre servicios.",
-          "Diseñé sistemas troncales críticos, incluyendo un módulo de órdenes de trabajo y un sistema de ejecución de comandos con seguimiento de solicitudes basado en UUID para un control de hardware confiable.",
-          "Construí infraestructura de plataforma compartida que incluye un servicio de archivos centralizado y un motor de metadatos de hardware con sincronización con GitHub y caché de Redis.",
-          "Implementé sistemas de autenticación avanzados que incluyen Passkeys (WebAuthn), códigos de respaldo y flujos de desafío basados en Redis.",
-          "Arquitecturé y escalé una plataforma de administración multi-tenant e infraestructura de producción utilizando Docker y CI/CD, compatible con múltiples productos."
+          "Lideré la arquitectura y el desarrollo de BMS Intel, un sistema de gestión de edificios a gran escala con control de dispositivos industriales en tiempo real vía WebSockets.",
+          "Diseñé los sistemas backend centrales: órdenes de trabajo, ejecución de comandos con trazabilidad por UUID, un servicio de archivos centralizado y una migración de identificadores en todo el sistema que abarcó más de 100 archivos.",
+          "Implementé autenticación con Passkeys (WebAuthn) y códigos de respaldo, usando Redis para almacenar los metadatos de cada dispositivo registrado.",
+          "Escalé una plataforma de administración multi-tenant e infraestructura de producción con Docker y CI/CD, dando soporte a varios productos, entre ellos Gridlock."
         ],
         "stack": [
           "Next.js",
@@ -97,12 +104,10 @@
         "logo": "/images/logos/listomx-logo.png",
         "url": "https://listo.mx",
         "period": "Nov 2021 - May 2022",
-        "description": "Extraje y sinteticé datos de estados de cuenta financieros para generar reportes personalizados en PDF.",
+        "description": "Construí extracción automatizada de datos financieros, reportes en PDF e interfaces de visualización de facturas con Django.",
         "contributions": [
-          "Desarrollé reportes personalizados en PDF mediante la extracción y síntesis de datos de estados de cuenta financieros.",
-          "Utilicé Django para presentar dinámicamente datos clave de facturas en la interfaz de usuario.",
-          "Implementé pruebas automatizadas para garantizar la calidad del código y agilizar los procesos de despliegue.",
-          "Mejoré la configuración del entorno de desarrollo para facilitar la incorporación de futuros desarrolladores en Listo Servicios Digitales."
+          "Construí pipelines automatizados que generan reportes estructurados en PDF a partir de estados de cuenta financieros, con interfaces dinámicas de facturas en Django.",
+          "Introduje pruebas automatizadas y optimicé la configuración del entorno, mejorando la confiabilidad de los despliegues y la incorporación de desarrolladores."
         ],
         "stack": [
           "Django",
