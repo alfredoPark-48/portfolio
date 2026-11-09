@@ -101,19 +101,21 @@ export default function Header() {
         </nav>
 
         {/* Mobile Toggle */}
-        <div className="md:hidden flex items-center gap-4 z-50">
+        {/* Mobile controls: 44x44 minimum touch targets (iOS HIG / WCAG 2.5.5) */}
+        <div className="md:hidden flex items-center gap-1 z-50 -mr-2">
           <button
             onClick={toggleLanguage}
-            className="p-2 text-foreground hover:opacity-70 transition-opacity"
+            className="h-11 w-11 flex items-center justify-center text-foreground hover:opacity-70 transition-opacity"
             aria-label="Switch Language"
             suppressHydrationWarning
           >
             <Globe size={20} suppressHydrationWarning />
           </button>
           <button
-            className="p-2 -mr-2 text-foreground hover:opacity-70 transition-opacity"
+            className="h-11 w-11 flex items-center justify-center text-foreground hover:opacity-70 transition-opacity"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
             suppressHydrationWarning
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}

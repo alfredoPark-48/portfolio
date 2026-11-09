@@ -54,44 +54,72 @@ export default function Background() {
     let width = window.innerWidth;
     let height = window.innerHeight;
 
-    canvas.width = width;
-    canvas.height = height;
+    // Scale the backing store to the device pixel ratio so the drifting code
+    // renders crisply on phone/retina displays instead of upscaled and fuzzy.
+    const applySize = () => {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+
+    applySize();
 
     // Helper to get current dimensions
     const getBounds = () => ({ width, height });
 
     const particles: Particle[] = [];
-    const particleCount = 20;
+    // Fewer drifting snippets on small screens: they are mostly occluded by
+    // the content cards there, and this is a continuous rAF loop on battery.
+    const particleCount = width < 768 ? 8 : 20;
 
     for (let i = 0; i < particleCount; i++) {
       particles.push(new Particle(getBounds));
     }
 
-    const animate = () => {
+    const draw = () => {
       ctx.clearRect(0, 0, width, height);
-
       particles.forEach((particle) => {
         particle.update();
         particle.draw(ctx);
       });
-
-      requestAnimationFrame(animate);
     };
 
-    const animationId = requestAnimationFrame(animate);
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let frameId = 0;
+
+    const animate = () => {
+      draw();
+      frameId = requestAnimationFrame(animate);
+    };
+
+    const start = () => {
+      cancelAnimationFrame(frameId);
+      if (motionQuery.matches) {
+        // Honour the OS setting: paint one static frame, then stop.
+        draw();
+        return;
+      }
+      frameId = requestAnimationFrame(animate);
+    };
+
+    start();
 
     const handleResize = () => {
       width = window.innerWidth;
       height = window.innerHeight;
-      canvas.width = width;
-      canvas.height = height;
+      applySize();
     };
 
     window.addEventListener("resize", handleResize);
+    motionQuery.addEventListener("change", start);
 
     return () => {
-      cancelAnimationFrame(animationId);
+      cancelAnimationFrame(frameId);
       window.removeEventListener("resize", handleResize);
+      motionQuery.removeEventListener("change", start);
     };
   }, []);
 
