@@ -132,11 +132,28 @@
     "title": "Certifications & Recognition",
     "items": [
       {
-        "name": "AWS Certified Solutions Architect",
-        "issuer": "Amazon Web Services",
+        "name": "Desarrollo de algoritmos computacionales",
+        "issuer": "Tecnológico de Monterrey — School of Engineering and Sciences",
         "date": "2024",
-        "logo": "",
-        "link": ""
+        "description": "Solves problems by generating efficient computational algorithms using computer science models and tools.",
+        "logo": "/images/badges/tec-algoritmos.svg",
+        "link": "https://badges.parchment.com/public/badges/DZbzqyrWTfWDLziCn4Lvxw"
+      },
+      {
+        "name": "Desarrollo de sistemas de software",
+        "issuer": "Tecnológico de Monterrey — School of Engineering and Sciences",
+        "date": "2024",
+        "description": "Develops software applying software engineering process and quality standards.",
+        "logo": "/images/badges/tec-sistemas-software.svg",
+        "link": "https://badges.parchment.com/public/badges/B1oLByn-QCy1Ph4xnFG2-g"
+      },
+      {
+        "name": "Implementación de infraestructura computacional",
+        "issuer": "Tecnológico de Monterrey — School of Engineering and Sciences",
+        "date": "2024",
+        "description": "Implements state-of-the-art computing infrastructure meeting interconnection, operation, and information security needs.",
+        "logo": "/images/badges/tec-infraestructura.svg",
+        "link": "https://badges.parchment.com/public/badges/wURN9H7pRRyznSq34ddagA"
       }
     ]
   },

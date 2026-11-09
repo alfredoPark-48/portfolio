@@ -61,15 +61,20 @@ export default function Certifications() {
                     )}
 
                     <div className="flex flex-col space-y-1.5">
-                      <h3 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight group-hover:text-primary transition-colors duration-300">
+                      <h3 className="text-xl md:text-2xl font-bold text-foreground tracking-tight group-hover:text-primary transition-colors duration-300">
                         {cert.name}
                       </h3>
-                      <p className="text-lg text-accents-5 font-medium flex items-center gap-2">
+                      <p className="text-base md:text-lg text-accents-5 font-medium flex items-center gap-2">
                         {cert.issuer}
                         {cert.link && (
                           <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-primary" />
                         )}
                       </p>
+                      {cert.description && (
+                        <p className="text-sm md:text-base text-accents-6 leading-relaxed max-w-xl pt-1">
+                          {cert.description}
+                        </p>
+                      )}
                     </div>
                   </div>
 
