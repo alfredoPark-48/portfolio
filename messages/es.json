@@ -3,6 +3,7 @@
     "about": "Sobre Mí",
     "skills": "Habilidades",
     "experience": "Experiencia",
+    "certifications": "Certificaciones",
     "projects": "Proyectos",
     "contact": "Contacto",
     "getInTouch": "En contacto"
@@ -119,6 +120,18 @@
         "period": "Ene 2019 - Jun 2024",
         "logo": "/images/logos/tec-logo.svg",
         "link": "https://tec.mx/es/ingenieria-y-ciencias/ingenieria-en-tecnologias-computacionales"
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certificaciones y Reconocimientos",
+    "items": [
+      {
+        "name": "AWS Certified Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "date": "2024",
+        "logo": "",
+        "link": ""
       }
     ]
   },

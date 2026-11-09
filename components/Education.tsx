@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
-import { GraduationCap, Award, ExternalLink } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 export default function Education() {
@@ -24,7 +24,7 @@ export default function Education() {
             <span className="text-sm font-bold uppercase tracking-widest text-accents-4 block mb-4">
               {t.education.title}
             </span>
-            <div className="h-[2px] w-10 bg-foreground/30 mt-1 rounded-full" />
+            <div className="h-0.5 w-10 bg-foreground/30 mt-1 rounded-full" />
           </div>
 
           <div className="flex flex-col gap-8">

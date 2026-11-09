@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
-import { Briefcase, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { SKILLS } from "@/constants/skills";
 
@@ -25,12 +25,12 @@ export default function Experience() {
             <span className="text-sm font-bold uppercase tracking-widest text-accents-4 block mb-4">
               {t.experience.title}
             </span>
-            <div className="h-[2px] w-10 bg-foreground/30 mt-1 rounded-full" />
+            <div className="h-0.5 w-10 bg-foreground/30 mt-1 rounded-full" />
           </div>
 
           <div className="relative">
             {/* Elegant Glow Timeline Line - Hidden on Mobile */}
-            <div className="hidden md:block absolute left-[23px] top-6 bottom-4 w-[2px] bg-linear-to-b from-primary/40 via-accents-2 to-transparent rounded-full" />
+            <div className="hidden md:block absolute left-[23px] top-6 bottom-4 w-0.5 bg-linear-to-b from-primary/40 via-accents-2 to-transparent rounded-full" />
 
             <div className="space-y-12 md:space-y-16">
               {t.experience.jobs.map((job, index) => (
@@ -141,9 +141,8 @@ export default function Experience() {
                                     src={skillInfo.logo}
                                     alt={tech}
                                     fill
-                                    className={`object-contain filter group-hover/skill:scale-115 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                                      skillInfo.invertDark ? "dark:brightness-0 dark:invert" : ""
-                                    }`}
+                                    className={`object-contain filter group-hover/skill:scale-115 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${skillInfo.invertDark ? "dark:brightness-0 dark:invert" : ""
+                                      }`}
                                   />
                                 </div>
                               )}

@@ -3,6 +3,7 @@
     "about": "About",
     "skills": "Skills",
     "experience": "Experience",
+    "certifications": "Certifications",
     "projects": "Projects",
     "contact": "Contact",
     "getInTouch": "Get in touch"
@@ -119,6 +120,18 @@
         "period": "Jan 2019 - Jun 2024",
         "logo": "/images/logos/tec-logo.svg",
         "link": "https://tec.mx/en/Engineering-and-Sciences/bs-in-computer-science-and-technology"
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications & Recognition",
+    "items": [
+      {
+        "name": "AWS Certified Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "date": "2024",
+        "logo": "",
+        "link": ""
       }
     ]
   },

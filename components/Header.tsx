@@ -23,6 +23,7 @@ export default function Header() {
   const links = [
     { name: t.header.about, href: "#about" },
     { name: t.header.experience, href: "#experience" },
+    { name: t.header.certifications, href: "#certifications" },
     { name: t.header.projects, href: "#projects" },
     { name: t.header.contact, href: "#contact" },
   ];

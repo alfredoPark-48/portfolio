@@ -3,6 +3,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import Certifications from "@/components/Certifications";
 import Projects from "@/components/Projects";
 import { CONTACT_INFO } from "@/constants/contact";
 import { SKILLS } from "@/constants/skills";
@@ -40,6 +41,7 @@ export default function Page() {
       <Skills />
       <Experience />
       <Education />
+      <Certifications />
       <Projects />
     </div>
   );
