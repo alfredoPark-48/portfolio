@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/*
+ * Mobile-first interaction gate.
+ * Tailwind v4 already scopes `hover:` to `@media (hover: hover)`, so hover
+ * styling never sticks on touch — but that leaves touch with no affordance at
+ * all. This variant lets a component ship a visible default for touch and
+ * reserve the reveal-on-hover behaviour for pointer devices.
+ */
+@custom-variant hover-device (@media (hover: hover) and (pointer: fine));
+
 :root {
   --background: #ffffff;
   --foreground: #0a0a0a;
@@ -37,6 +46,12 @@
 
 html {
   scroll-behavior: smooth;
+  /*
+   * The header is fixed at 5rem (h-20). Without this, anchor navigation parks
+   * section headings underneath it. Previously the sections' generous `py-24`
+   * masked the problem; the tighter mobile rhythm makes it explicit.
+   */
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -63,4 +78,23 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accents-3);
+}
+
+/*
+ * Respect the OS "reduce motion" setting. Matters most on mobile, where the
+ * fixed background canvas and the scroll-triggered reveals run on battery.
+ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

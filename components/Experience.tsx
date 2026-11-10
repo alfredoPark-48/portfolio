@@ -12,7 +12,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-24 bg-accents-1 border-t border-accents-2/30"
+      className="py-16 md:py-24 bg-accents-1 border-t border-accents-2/30"
     >
       <div className="container mx-auto px-6 max-w-4xl">
         <motion.div
@@ -21,7 +21,7 @@ export default function Experience() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="mb-20 flex flex-col items-start">
+          <div className="mb-10 md:mb-20 flex flex-col items-start">
             <span className="text-sm font-bold uppercase tracking-widest text-accents-4 block mb-4">
               {t.experience.title}
             </span>
@@ -32,7 +32,7 @@ export default function Experience() {
             {/* Elegant Glow Timeline Line - Hidden on Mobile */}
             <div className="hidden md:block absolute left-[23px] top-6 bottom-4 w-0.5 bg-linear-to-b from-primary/40 via-accents-2 to-transparent rounded-full" />
 
-            <div className="space-y-12 md:space-y-16">
+            <div className="space-y-6 md:space-y-16">
               {t.experience.jobs.map((job, index) => (
                 <motion.div
                   key={index}
@@ -50,6 +50,11 @@ export default function Experience() {
                     href={job.url}
                     target={job.url ? "_blank" : undefined}
                     rel={job.url ? "noopener noreferrer" : undefined}
+                    aria-label={
+                      job.url
+                        ? `${job.company} — ${job.role} (opens in a new tab)`
+                        : `${job.company} — ${job.role}`
+                    }
                     className={`group relative overflow-hidden block bg-background border border-accents-2 hover:border-accents-4 p-6 sm:p-8 md:p-10 rounded-3xl transition-all duration-600 ease-[cubic-bezier(0.16,1,0.3,1)] hover:shadow-[0_30px_70px_-15px_rgba(0,0,0,0.06)] dark:hover:shadow-[0_30px_70px_-15px_rgba(0,0,0,0.4)] hover:-translate-y-1.5 ${job.url ? "cursor-pointer" : ""}`}
                   >
                     {/* Decorative glow orbs — always visible, brighten on hover */}
@@ -76,7 +81,7 @@ export default function Experience() {
                           <div className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 flex items-center gap-2 mb-1">
                             {job.company}
                             {job.url && (
-                              <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-primary" />
+                              <ExternalLink className="w-4 h-4 shrink-0 text-primary transition-opacity duration-300 opacity-100 hover-device:opacity-0 hover-device:group-hover:opacity-100" />
                             )}
                           </div>
 
@@ -99,16 +104,16 @@ export default function Experience() {
                       </div>
                     </div>
 
-                    <p className="text-accents-6 leading-relaxed mb-8 text-[1.05rem] md:text-[1.1rem] font-medium relative z-10 w-full max-w-2xl tracking-wide">
+                    <p className="text-accents-6 leading-relaxed mb-6 md:mb-8 text-base md:text-[1.1rem] font-medium relative z-10 w-full max-w-2xl tracking-wide">
                       {job.description}
                     </p>
 
                     {job.contributions && (
-                      <div className="mb-8 relative z-10">
+                      <div className="mb-6 md:mb-8 relative z-10">
                         <h4 className="text-sm font-bold uppercase tracking-widest text-accents-4 mb-4">
                           {t.experience.keyContributions}
                         </h4>
-                        <ul className="space-y-3.5">
+                        <ul className="space-y-3 md:space-y-3.5">
                           {job.contributions.map(
                             (contribution: string, i: number) => (
                               <li
